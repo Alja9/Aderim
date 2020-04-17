@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Aderim</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../image/aderimLogoBGWhite.jpg">
+    <!--STYLE-->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!--FRAMEWORK-->
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="navbarHeader">
+            <div class="container">
+                <div class="row kolomA">
+                    <ul class="ukuran-besar-navBar pull-right">
+                        <li class="upper-links"><a href="addProject.html" class="links">TAMBAH PROJECT</a></li>
+                        <li class="upper-links"><a href="halamanProfesi.html" class="links">PROFESI SAYA</a></li>
+                        <li class="upper-links"><a href="daftarProfesi.html" class="links">DAFTAR PROFESI</a></li>
+                        <li class="upper-links"><a class="links" href="orderProgresView.html">ORDER PROGRES</a></li>
+                        <li class="upper-links"><a class="links" href="riwayatOrder.html">ORDER</a></li>
+                        <li class="upper-links"><a href="halamanAdmin.html" class="links"><i class="fas fa-book-open"></i> HALAMAN ADMIN</a></li>
+                    </ul>
+                </div>
+                <div class="row kolomB">
+                    <div class="col-sm-2 logo">
+                        <h2><span class="ukuran-kecil-navBar menu" onclick="openNav()"><i class="fas fa-bars"></i></span></h2>
+                        <a href="lamanAkun.html">
+                            <h2><span class="ukuran-kecil-navBar menu">ADERIM</span></h2>
+                        </a>
+                        <a href="lamanAkun.html">
+                            <h1><span class="ukuran-besar-navBar"><b>ADERIM</b></span></h1>
+                        </a>
+                    </div>
+                    <div class="navbarHeader-search smallsearch col-sm-6 col-xs-11">
+                        <div class="row">
+                            <form class="navbar-form navbar-right" method="" action="" style="margin-left: 0px;" autocomplete="off">
+                                <div class="searchbar">
+                                    <input class="search_input" type="text" name="cari" placeholder="Cari project">
+                                    <input class="search_icon" type="submit" value="➤" style="cursor:pointer;">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="ukuran-besar-navBar col-sm-2 pull-right navbarBeliKategori" style="width: 162px; padding-left: 0px;">
+                        <li class="upper-links dropdown"><a href="#" class="dropdown-toggle links" data-toggle="dropdown"><i class="fas fa-user"></i> Akun</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="informasiAkun.html">Informasi Akun</a></li>
+                                <li><a href="progresOrder.html">Progres Order</a></li>
+                                <li><a href="historyOrder.html">History Order</a></li>
+                                <li><a href="../index.html">Log Out</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                    <div class="ukuran-besar-navBar col-sm-2 pull-right navbarBeliKategori" style="width: 162px; padding-left: 0px;">
+                        <li class="upper-links dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fas fa-archive"></i> KATEGORI</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><i class="fas fa-home"></i> Rumah</a></li>
+                                <li><a href="#"><i class="fas fa-hotel"></i> Hotel</a></li>
+                                <li><a href="#"><i class="fas fa-building"></i> Apartemen</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="myNavbarSamping" class="navbar-samping">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <button class="dropdown-btn">
+                <i class="fas fa-user"></i> Akun <i class="caret"></i>
+            </button>
+            <div class="dropdown-container-navBar-samping">
+                <a href="informasiAkun.html">Informasi Akun</i></a>
+                <a href="progresOrder.html">Progres Order</a>
+                <a href="historyOrder.html">History Order</i></a>
+                <a href="../index.html">Log Out</i></a>
+            </div>
+            <a href="halamanAdmin.html">HALAMAN ADMIN</a>
+            <button class="dropdown-btn">
+                <i class="fas fa-pencil-ruler"></i> PROFESI <i class="caret"></i>
+            </button>
+            <div class="dropdown-container-navBar-samping">
+                <a href="addProject.html">Tambah Project</i></a>
+                <a href="halamanProfesi.html">Profesi Saya</i></a>
+            </div>
+            <a href="daftarProfesi.html">DAFTAR PROFESI</a>
+            <button class="dropdown-btn">
+                <i class="fas fa-archive"></i> KATEGORI <i class="caret"></i>
+            </button>
+            <div class="dropdown-container-navBar-samping">
+                <a href="#">Rumah <i class="fas fa-home"></i></a>
+                <a href="#">Hotel <i class="fas fa-hotel"></i></a>
+                <a href="#">Apartemen <i class="fas fa-building"></i></a>
+            </div>
+            <a href="riwayatOrder.html">ORDER</a>
+            <a href="orderProgresView.html">ORDER PROGRES</a>
+            <a href="lamanAkun.html">BERANDA</a>
+        </div>
+    </header>
+    <section id="branda" class="container">
+        <br>
+        <br>
+        <!--CONTENT-->
+        <div class="container untuk-daftar-profesi halaman-profile">
+            <div class="row">
+                <center>
+                    <h2 style="margin-bottom: 30px;">UPDATE PROGRES</h2>
+                </center>
+                <div class="col-md-4">
+                    <form action="" id="my-dropzone" enctype="multipart/form-data" class="dropzone">
+                        <input type="file" name="file" />
+                    </form>
+                    <center><button id="#" class="submitbukti btn-block">Unggah</button></center>
+                </div>
+                <div class="col-md-8 untuk-isi-daftar-profesi">
+                    <form id="" method="POST" action=''>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="pesan"><b>Deskripsi</b></label>
+                                </div>
+                                <div class="col-md-6">
+                                    <textarea type="text" class="form-control" name="pesan" placeholder="Tulis deskripsi project Anda di sini" style="height: 150px;" required></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-check">
+                            <div class="row">
+                                <div class="col-md-6"></div>
+                                <div class="col-md-6">
+                                    <select name="status" class="form-control" required>
+                                        <option value="">(Pilih Waktu)</option>
+                                        <option value="1">1 bulan</option>
+                                        <option value="2">2 bulan</option>
+                                        <option value="3">3 bulan</option>
+                                        <option value="4">4 bulan</option>
+                                        <option value="5">5 bulan</option>
+                                        <option value="6">6 bulan</option>
+                                        <option value="7">7 bulan</option>
+                                        <option value="8">8 bulan</option>
+                                        <option value="9">9 bulan</option>
+                                        <option value="10">10 bulan</option>
+                                        <option value="11">11 bulan</option>
+                                        <option value="12">12 bulan</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                    </form>
+                    <center><a href="lamanAkun.html" onclick="myFunction()"><input type="submit" name="submit" value="Update Progres" class="btn" /></center></a>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br>
+    </section>
+    <footer class="section footer-classic context-dark bg-image">
+        <div class="container">
+            <div class="row row-30">
+                <div class="col-md-4 col-xl-5">
+                    <div class="pr-xl-4">
+                        <p><br>Universitas Brawijaya<br>Fakultas Ilmu Komputer</p>
+                        <!-- Sisi Kanan -->
+                        <p class="rights"><span>©  </span><span class="copyright-year">2019</span><span> </span><span>ADERIM</span><span>. </span><span>Kelompok X.</span></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Kontak</h5>
+                    <dl class="contact-list">
+                        <dt>Alamat:</dt>
+                        <dd>Jl. Veteran No.8 Polinema</dd>
+                    </dl>
+                    <dl class="contact-list">
+                        <dt>Email:</dt>
+                        <dd><a href="mailto:#" style="color: white;"><u>aderimofficial@gmail.com</u></a></dd>
+                    </dl>
+                </div>
+                <div class="col-md-4 col-xl-3">
+                    <h5 style="color: red;">Tambahan</h5>
+                    <ul class="nav-list">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Kelompok 10</a></li>
+                        <li><a href="#">Bcc 2019</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <button onclick="topFunction()" id="backtop" title="Kembali ke atas">&#8657</button>
+</body>
+<!--SCRIPT-->
+<script src="../javascript/jas.js"></script>
+<script>
+function myFunction() {
+    alert("BERHASIL MENGUPDATE PROGRES!");
+}
+</script>
+
+</html>
